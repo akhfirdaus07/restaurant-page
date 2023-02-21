@@ -1,0 +1,19 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant Page Project from The Odin Project (https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhfirdaus07/restaurant-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akhfirdaus07/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/akhfirdaus07/restaurant-page#readme"
+}
