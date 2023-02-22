@@ -1,3 +1,5 @@
+import locationImg from './images/location.png';
+
 function createContact() {
     const contact = document.createElement('div')
     contact.classList.add('contact')
@@ -8,9 +10,12 @@ function createContact() {
     const address = document.createElement('p')
     address.textContent = '🏠 Medan Merdeka, Central Jakarta, Indonesia'
   
-    const restaurantLocation = document.createElement('img')
-    restaurantLocation.src = '../src/images/location.png'
-    restaurantLocation.alt = 'Indonesia restaurant location'
+    // const restaurantLocation = document.createElement('img')
+    // restaurantLocation.src = '../src/images/location.png'
+    // restaurantLocation.alt = 'Indonesia restaurant location'
+
+    const restaurantLocation = new Image();
+    restaurantLocation.src = locationImg;
   
     contact.appendChild(phoneNumber)
     contact.appendChild(address)

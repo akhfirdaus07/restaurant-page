@@ -1,3 +1,8 @@
+import Rawon from './images/menu/rawon.jpeg';
+import Bakso from './images/menu/bakso.jpeg';
+import Sate from './images/menu/sate.jpeg';
+import Rendang from './images/menu/rendang.jpeg';
+
 function createMenu() {
     const menu = document.createElement("div");
     menu.classList.add("menu");
@@ -39,9 +44,15 @@ function createMenuItem(name, description) {
     const foodDescription = document.createElement("p");
     foodDescription.textContent = description;
   
-    const foodImage = document.createElement("img");
-    foodImage.src = `../src/images/menu/${name.toLowerCase()}.jpeg`;
-    foodImage.alt = `${name}`;
+    // const foodImage = document.createElement("img");
+    // foodImage.src = `../src/images/menu/${name.toLowerCase()}.jpeg`;
+    // foodImage.alt = `${name}`;
+
+    const foodImage = new Image();
+    if(name==`Rawon`) foodImage.src = Rawon;
+    if(name==`Bakso`) foodImage.src = Bakso;
+    if(name==`Sate`) foodImage.src = Sate;
+    if(name==`Rendang`) foodImage.src = Rendang;
   
     menuItem.appendChild(foodImage);
     menuItem.appendChild(foodName);

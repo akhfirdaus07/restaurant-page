@@ -1,14 +1,19 @@
+import chefImg from './images/chef.jpg';
+
 function createHome() {
     const home = document.createElement("div");
     home.classList.add("home");
   
-    const chefImage = document.createElement("img");
-    chefImage.src = "../src/images/chef.jpg";
-    chefImage.alt = "Chef";
-  
+    // const chefImage = document.createElement("img");
+    // chefImage.src = "../src/images/chef.jpg";
+    // chefImage.alt = "Chef";
+
+    const myIcon = new Image();
+    myIcon.src = chefImg;
+
     home.appendChild(createParagraph("Welcome to Indonesia Restaurant!"));
     home.appendChild(createParagraph("Are you ready?"));
-    home.appendChild(chefImage);
+    home.appendChild(myIcon);
     home.appendChild(createParagraph("Order online or visit us!"));
   
     return home;
