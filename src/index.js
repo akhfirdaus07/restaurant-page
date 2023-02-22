@@ -1,3 +1,6 @@
+import './style.css';
+
+
 function component(){
     const createH1=document.createElement('h1');
     const createImg=document.createElement('img');
