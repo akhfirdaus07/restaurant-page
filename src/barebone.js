@@ -1,3 +1,5 @@
+import loadHome from './home';
+
 function createHeader() {
     const header = document.createElement("header");
     header.classList.add("header");
@@ -18,11 +20,11 @@ function createNav() {
     const homeButton = document.createElement("button");
     homeButton.classList.add("button-nav");
     homeButton.textContent = "Home";
-    // homeButton.addEventListener("click", (e) => {
-    //   if (e.target.classList.contains("active")) return;
-    //   setActiveButton(homeButton);
-    //   loadHome();
-    // });
+    homeButton.addEventListener("click", (e) => {
+      if (e.target.classList.contains("active")) return;
+      setActiveButton(homeButton);
+      loadHome();
+    });
   
     const menuButton = document.createElement("button");
     menuButton.classList.add("button-nav");
@@ -49,6 +51,24 @@ function createNav() {
     return nav;
 }
 
+function setActiveButton(button) {
+    const buttons = document.querySelectorAll(".button-nav");
+  
+    buttons.forEach((button) => {
+        if (button !== this) {
+            button.classList.remove("active");
+        }
+    });
+    button.classList.add("active");
+}
+  
+function createMain() {
+    const main = document.createElement("main");
+    main.classList.add("main");
+    main.setAttribute("id", "main");
+    return main;
+}
+
 
 function createFooter() {
     const footer = document.createElement("footer");
@@ -72,4 +92,4 @@ function createFooter() {
 }
 
 
-export {createHeader, createFooter};
+export {createHeader, setActiveButton, createMain, createFooter};
