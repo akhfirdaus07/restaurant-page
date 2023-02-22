@@ -24,7 +24,7 @@ body {
     font-family: 'Montserrat', cursive;
     font-size: 1.6rem;
     color: var(--font-color);
-    background-image: url('bg-image.png');
+    background-image: url('images/bg-image.png');
     background-attachment: fixed;
     background-size: cover;
     

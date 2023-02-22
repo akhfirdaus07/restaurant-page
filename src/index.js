@@ -1,6 +1,6 @@
 import './style.css';
-import bgImageSrc from './bg-image.png';
-import createFooter from './footer';
+// import bgImageSrc from './im';
+import createFooter from './barebone';
 
 
 // function component(){
@@ -22,6 +22,7 @@ import createFooter from './footer';
 
 
 // component();
+
 
 function initializeWebsite() {
     const content = document.getElementById("content");
