@@ -1,6 +1,6 @@
 import './style.css';
 // import bgImageSrc from './im';
-import createFooter from './barebone';
+import {createHeader, createFooter} from './barebone.js';
 
 
 // function component(){
@@ -27,7 +27,7 @@ import createFooter from './barebone';
 function initializeWebsite() {
     const content = document.getElementById("content");
 
-    // content.appendChild(createHeader());
+    content.appendChild(createHeader());
     // content.appendChild(createMain());
     content.appendChild(createFooter());
 
