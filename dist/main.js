@@ -1,1 +1,1 @@
-console.log("HELLO FROM INDEX.JS");
+!function(){const e=document.createElement("h1"),n=document.createElement("img"),t=document.createElement("p"),a=document.querySelector("#content");e.innerHTML="Nusantara Restaurant",n.src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60",t.innerHTML="The best restaurant in Indonesia!",a.appendChild(e),a.appendChild(n),a.appendChild(t)}();
