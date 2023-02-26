@@ -1,2 +1,4 @@
 # restaurant-page
-Restaurant Page Project from The Odin Project (https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
+Restaurant Page Project
+
+Live demo: https://akhfirdaus07.github.io/restaurant-page/
